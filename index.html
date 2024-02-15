@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<span id="score"></span>
+<button onclick="score_omhoog()">Klik op mij 🥳</button>
+
+<script>
+    let score = 0;
+    function score_omhoog(){
+        score++;
+        document.getElementById("score").innerText = score;
+        console.log(score);
+        if (score === 10){
+            alert("Je bent klaar");
+        }
+    }
+
+</script>
+</body>
+</html>
